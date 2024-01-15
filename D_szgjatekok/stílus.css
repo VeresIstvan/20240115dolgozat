@@ -1,0 +1,88 @@
+main {
+    background-image: url(kepek/black.png);
+    background-size: 200%;
+    width: 90%;
+    height: 100%;
+    max-width: 900px;
+    font-family: Arial, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "article article aside"
+    "footer footer footer";
+}
+header {
+    grid-area: header;
+    box-sizing: border-box;
+    height: 300px;
+    background-size: cover;
+    background-image: url(kepek/game.jpg);
+}
+nav {
+    grid-area: nav;
+    box-sizing: border-box;
+    background-color: gray;
+    font-weight: bold;
+    color: beige;
+}
+nav>ul>li {
+    list-style-type: none;
+}
+nav>a{
+    color: beige;
+    text-decoration: none;
+    overflow: hidden;
+    padding: 14px 25px;
+    float: left;
+}
+a:hover {
+    background-color: orange;
+}
+#link1 {
+    border: 2px solid beige;
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    padding: 14px 25px;
+}
+#link2 {
+    border: 2px beige solid;
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    padding: 14px 25px;
+}
+#link1>a :hover {
+    background-color: orange;
+    border-color: orange;
+}
+article {
+    grid-area: article;
+    box-sizing: border-box;
+    color: black;
+    background-color: lightgrey;
+}
+article>ul>li {
+    list-style-type: square;
+}
+h2 {
+    font-size: 15pt;
+}
+aside {
+    padding-top: 40%;
+    grid-area: aside;
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
+#kep {
+    width: 80%;
+    height: auto;
+}
+footer {
+    grid-area: footer;
+    box-sizing: border-box;
+    background-color: gold;
+    text-align: center;
+}
